@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/macndesign/dribbble_popshots.svg)](https://travis-ci.org/macndesign/dribbble_popshots)
+
 # Dribbble PopShots
 Aplicação client-side que consulta a API do Dribbble e mostra os shots mais populares.
 
