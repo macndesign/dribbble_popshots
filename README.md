@@ -11,3 +11,8 @@ Aplicação client-side que consulta a API do Dribbble e mostra os shots mais po
 - Na raiz da app: bower install
 - Ainda na raiz, se estiver em Linux ou Mac, eles já tem o Python, execute: python -m SimpleHTTPServer
 - Acesse em http://localhost:8000
+
+# Publicando no GitHub Pages
+- git checkout gh-pages
+- git merge master
+- git push origin gh-pages
