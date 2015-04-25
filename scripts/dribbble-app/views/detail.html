@@ -1,0 +1,35 @@
+<div class="row" ng-init="dribbbleDetailCtrl.init()">
+    <div class="col-sm-8 col-sm-offset-2">
+        <a class="thumbnail thumb-image"  ng-href="https://dribbble.com/shots/{{dribbbleDetailCtrl.dribbble.id}}"
+           target="_blank">
+            <img ng-src="{{dribbbleDetailCtrl.dribbble.image_url}}"/>
+        </a>
+        <div class="thumbnail thumb-desc">
+            <div class="caption">
+                <div class="row thumb-profile-detail">
+                    <img class="col-md-2 img-circle" ng-src="{{dribbbleDetailCtrl.dribbble.player.avatar_url}}"/>
+                    <div class="col-md-10 thumb-profile-detail-title">
+                        <a ng-href="https://dribbble.com/{{dribbbleDetailCtrl.dribbble.player.username}}" target="_blank">
+                            <h1 ng-bind="dribbbleDetailCtrl.dribbble.player.name"></h1>
+                        </a>
+                    </div>
+                </div>
+                <hr/>
+                <div><h3 ng-bind="dribbbleDetailCtrl.dribbble.title"></h3></div>
+                <p ng-bind-html="dribbbleDetailCtrl.dribbble.description"></p>
+                <hr/>
+                <p>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <span ng-bind="dribbbleDetailCtrl.dribbble.views_count"></span>
+                    <span class="pull-right">
+                        <a ng-href="https://twitter.com/@{{dribbbleDetailCtrl.dribbble.player.twitter_screen_name}}"
+                           class="btn btn-primary" role="button" target="_blank">twitter</a>
+                        <a href="#/" class="btn btn-default" role="button">
+                            <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

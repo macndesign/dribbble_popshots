@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Dribbble API</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:800,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="dribbbleApp">
+
+<!-- Fixed navbar -->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/"><strong>Dribbble shots</strong> (got to home)</a>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container" ng-view></div>
+<footer class="footer">
+    <div class="container">
+        <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; Company 2015. All rights reserved</p><br/>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal loading -->
+<div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Loading ...</h4>
+            </div>
+            <div class="modal-body">
+                Running the page rendering with the read data.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+<script src="scripts/dribbble-app/app.js"></script>
+<script src="scripts/dribbble-app/services.js"></script>
+<script src="scripts/dribbble-app/controllers/list.js"></script>
+<script src="scripts/dribbble-app/controllers/detail.js"></script>
+</body>
+</html>

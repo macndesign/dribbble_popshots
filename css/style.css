@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 70px;
+    background-color: #ededed;
+}
+h1, h2, h3 {
+    font-weight: 800;
+}
+.thumb-image {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.thumb-desc {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.thumb-desc-list {
+    background-color: #ddd;
+}
+.thumb-desc-title {
+    height: 4.5em;
+    overflow: hidden;
+}
+.thumb-desc-title > h3 {
+    margin-top: 0;
+}
+.thumb-desc-profile {
+    padding-bottom: 2em;
+}
+.thumb-desc-profile > a {
+    font-size: 1.3em;
+    padding-left: 0.5em;
+}
+.thumb-profile-detail {
+    position: relative;
+}
+.thumb-profile-detail-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dribbble_test",
+  "version": "0.0.0",
+  "description": "test with dribbble api",
+  "main": "karma.conf.js",
+  "dependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma": "^0.12.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "dribbble",
+    "api"
+  ],
+  "author": "Mário Chaves <macndesign@gmail.com>",
+  "license": "MIT"
+}

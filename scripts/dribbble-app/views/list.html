@@ -1,0 +1,35 @@
+<div ng-init="dribbbleListCtrl.init()">
+    <div class="row">
+        <div ng-repeat="dribbble in dribbbleListCtrl.dribbbles" class="col-sm-6 col-md-4">
+            <a class="thumbnail thumb-image"  ng-href="#/detail/{{dribbble.id}}">
+                <img ng-src="{{dribbble.image_url}}"/>
+            </a>
+            <div class="thumbnail thumb-desc thumb-desc-list">
+                <div class="caption">
+                    <div class="thumb-desc-title">
+                        <h3 ng-bind="dribbble.title|limitTo:22"></h3>
+                    </div>
+                    <div class="thumb-desc-profile">
+                        <img width="20%" class="img-circle" ng-src="{{dribbble.player.avatar_url}}"/>
+                        <a ng-href="https://dribbble.com/{{dribbble.player.username}}" target="_blank">
+                            <span ng-bind="dribbble.player.name|limitTo:20"></span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        <span ng-bind="dribbble.views_count"></span>
+                        <a ng-href="#/detail/{{dribbble.id}}" class="btn btn-primary pull-right" role="button">Go to detail</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <button type="button" class="btn btn-info btn-lg btn-block" id="load-more"
+                    ng-click="dribbbleListCtrl.loadMore()" ng-hide="dribbbleListCtrl.hideLoadMore">
+                Loading more ...
+            </button>
+        </div>
+    </div>
+</div>
