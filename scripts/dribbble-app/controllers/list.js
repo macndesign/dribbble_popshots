@@ -33,10 +33,8 @@ angular.module('dribbbleApp')
             DribbbleService.getDribbbles(PAGE).then(function(resp) {
                 self.pages = resp.pages;
                 self.dribbbles = resp.shots;
-                $log.log(self.dribbbles);
                 self.hideLoadMore = false;
                 $loading.modal('hide');
-                $log.log(resp);
             });
         }
 
