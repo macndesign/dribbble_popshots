@@ -2,18 +2,17 @@ language: node_js
 node_js:
   - "0.10"
 before_script:
-#  - npm install -g grunt-cli
+  - npm install -g grunt-cli
   - npm install -g bower
-#  - npm install -g gulp
+  - npm install -g gulp
   - npm install phantomjs
   - npm install -g karma-cli
   - npm install -g karma
   - npm install karma-jasmine karma-chrome-launcher
   - bower install
-#  - gulp build
-#  - gulp style
+  - gulp build
+  - gulp style
 after_success:
   - git checkout gh-pages
   - git merge master
   - git push origin gh-pages
-
