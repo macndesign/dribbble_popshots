@@ -7,15 +7,11 @@ Aplicação client-side que consulta a API do Dribbble e mostra os shots mais po
 # Instalação para executar os testes
 - Instale o NodeJS
 - npm install -g karma-cli
-- Na raiz da app: npm install
+- Na raíz da app: npm install
 - Execute os testes com: karma start
 
 # Instalação para executar a app
-- Na raiz da app: bower install
-- Ainda na raiz, se estiver em Linux ou Mac, eles já tem o Python, execute: python -m SimpleHTTPServer
+- Na raíz da app: bower install
+- Ainda na raíz, se estiver em Linux ou Mac, eles já tem o Python, execute: python -m SimpleHTTPServer
 - Acesse em http://localhost:8000
-
-# Publicando no GitHub Pages
-- git checkout gh-pages
-- git merge master
-- git push origin gh-pages
+- Ou instale o módulo http-server com: npm install http-server -g. E execute com o comando: http-server, no diretório raíz da app e então acesse: http://localhost:8080

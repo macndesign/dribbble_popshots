@@ -32,3 +32,4 @@ node_modules
 bower_components
 dep
 .idea
+.DS_Store
