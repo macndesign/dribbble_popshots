@@ -12,7 +12,3 @@ before_script:
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-after_success:
-  - git checkout gh-pages
-  - git merge master
-  - git push origin gh-pages
