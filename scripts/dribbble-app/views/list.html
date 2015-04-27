@@ -1,6 +1,6 @@
 <div ng-init="dribbbleListCtrl.init()">
     <div class="row">
-        <div ng-repeat="dribbble in dribbbleListCtrl.dribbbles" class="col-sm-6 col-md-4">
+        <div ng-repeat="dribbble in dribbbleListCtrl.dribbbles" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a class="thumbnail thumb-image"  ng-href="#/detail/{{dribbble.id}}">
                 <img ng-src="{{dribbble.image_url}}"/>
             </a>
